@@ -11,17 +11,17 @@ import java.util.GregorianCalendar;
  *
  */
 public class Vendedor {
-	private String id, rut, nombre, apellido;
+	private String vendedorId, rut, nombre, apellido;
 	private Calendar fechaNacimiento;
 
 	/**
 	 * 
 	 */
 	public Vendedor() {
-		this.id = id;
-		this.rut = rut;
-		this.nombre = nombre;
-		this.apellido = apellido;
+		this.vendedorId = "";
+		this.rut = "";
+		this.nombre = "";
+		this.apellido = "";
 		this.fechaNacimiento = new GregorianCalendar(0, 0, 0);
 	}
 
@@ -33,7 +33,7 @@ public class Vendedor {
 	 * @param fechaNacimiento
 	 */
 	public Vendedor(String id, String rut, String nombre, String apellido, Calendar fechaNacimiento) {
-		this.id = id;
+		this.vendedorId = id;
 		this.rut = rut;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -44,7 +44,7 @@ public class Vendedor {
 	 * @return the id
 	 */
 	public String getId() {
-		return id;
+		return vendedorId;
 	}
 
 	/**
@@ -52,7 +52,7 @@ public class Vendedor {
 	 *            the id to set
 	 */
 	public void setId(String id) {
-		this.id = id;
+		this.vendedorId = id;
 	}
 
 	/**
@@ -118,5 +118,7 @@ public class Vendedor {
 	public void obtenerVentas() {
 
 	}
+	
+	
 
 }
