@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+<meta charset="ISO-8859-1"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<title>Busqueda</title>
+</head>
+<body>
+<div class="container-fluid" >
+		<div class="row" >
+			<div class=" col-md-6 col-md-offset-3" >
+				<div class="bg-info" style="padding:10px;" >
+					<h:form>
+						<div class="form-group" >
+							<h:inputText value="#{buscarProductoControlador}" styleClass="form-control" ></h:inputText>
+						</div>
+						<div class="form-group" >
+							<h:commandButton value="Buscar Producto" action="#{buscarProductoControlador}" styleClass="btn btn-primary btn-block" ></h:commandButton>
+						</div>
+					</h:form>
+					<h:outputText value="#{loginControlador.mensaje}" ></h:outputText>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
