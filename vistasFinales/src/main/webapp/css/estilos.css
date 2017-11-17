@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+
+.cont-alumno{
+		border:1px solid silver;
+		padding:10px;
+		margin-bottom: 10px;
+	}
+	
+	.btn-block {
+    display: block;
+    width: 55%;
